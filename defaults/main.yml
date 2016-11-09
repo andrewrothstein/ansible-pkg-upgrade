@@ -1,0 +1,3 @@
+---
+# defaults file for pkg-upgrade
+pkg_upgrade_privilege_escalation: True

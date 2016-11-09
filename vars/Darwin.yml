@@ -1,0 +1,4 @@
+---
+pkg_upgrade_privilege_escalation: False
+pkg_upgrade_update_cmd: brew update
+pkg_upgrade_upgrade_cmd: brew upgrade
