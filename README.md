@@ -1,3 +1,4 @@
+[![CircleCI](https://circleci.com/gh/andrewrothstein/ansible-pkg-upgrade.svg?style=svg)](https://circleci.com/gh/andrewrothstein/ansible-pkg-upgrade)
 andrewrothstein.pkg-upgrade
 =========
 
