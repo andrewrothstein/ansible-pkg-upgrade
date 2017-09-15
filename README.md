@@ -1,6 +1,6 @@
-[![CircleCI](https://circleci.com/gh/andrewrothstein/ansible-pkg-upgrade.svg?style=svg)](https://circleci.com/gh/andrewrothstein/ansible-pkg-upgrade)
 andrewrothstein.pkg-upgrade
 =========
+[![Build Status](https://travis-ci.org/andrewrothstein/ansible-pkg-upgrade.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-pkg-upgrade)
 
 Pulls in all package upgrades available with the package manager. This role is *not* idempotent.
 
@@ -22,9 +22,11 @@ See [meta/main.yml](meta/main.yml)
 Example Playbook
 ----------------
 
-    - hosts: servers
-      roles:
-         - andrewrothstein.pkg-upgrade
+```yml
+- hosts: servers
+  roles:
+    - andrewrothstein.pkg-upgrade
+```
 
 License
 -------
@@ -34,4 +36,4 @@ MIT
 Author Information
 ------------------
 
-Andrew Rothstein andrew.rothstein@gmail.com
+Andrew Rothstein <andrew.rothstein@gmail.com>
