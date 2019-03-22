@@ -1,23 +1,23 @@
 ---
 - name: resolve platform specific vars
-  include_vars: '{{item}}'
+  include_vars: '{{ item }}'
   with_first_found:
     - files:
-        - '{{ansible_distribution}}-{{ansible_distribution_release}}.yml'
-        - '{{ansible_distribution}}.yml'
-        - '{{ansible_os_family}}.yml'
+        - '{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml'
+        - '{{ ansible_distribution }}.yml'
+        - '{{ ansible_os_family }}.yml'
       skip: true
       paths:
-        - '{{role_path}}/vars'
+        - '{{ role_path }}/vars'
 
 - name: update...
-  become: '{{pkg_upgrade_privilege_escalation}}'
+  become: '{{ pkg_upgrade_privilege_escalation }}'
   become_user: root
-  command: '{{pkg_upgrade_update_cmd}}'
+  command: '{{ pkg_upgrade_update_cmd }}'
   when: pkg_upgrade_update_cmd is defined
 
 - name: upgrade...
-  become: '{{pkg_upgrade_privilege_escalation}}'
+  become: '{{ pkg_upgrade_privilege_escalation }}'
   become_user: root
-  command: '{{pkg_upgrade_upgrade_cmd}}'
+  command: '{{ pkg_upgrade_upgrade_cmd }}'
   when: pkg_upgrade_upgrade_cmd is defined
