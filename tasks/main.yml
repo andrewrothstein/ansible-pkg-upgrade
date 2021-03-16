@@ -20,4 +20,4 @@
   become: '{{ pkg_upgrade_privilege_escalation }}'
   become_user: root
   command: '{{ pkg_upgrade_upgrade_cmd }}'
-  when: pkg_upgrade_upgrade_cmd is defined
+  when: (pkg_upgrade_upgrade_cmd is defined) and (not pkg_upgrade_update_only)
