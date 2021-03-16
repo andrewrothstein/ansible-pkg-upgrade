@@ -7,21 +7,31 @@ galaxy_info:
     - MIT
   min_ansible_version: 2.0
   platforms:
-    - name: EL
-      versions:
-        - all
-    - name: Fedora
-      versions:
-        - all
-    - name: Ubuntu
-      versions:
-        - all
-    - name: MacOSX
-      versions:
-        - all
     - name: Alpine
       versions:
         - all
+    - name: Archlinux
+      versions:
+        - 7
+        - 8
+    - name: Debian
+      versions:
+        - bullseye
+        - buster
+        - stretch
+    - name: Fedora
+      versions:
+        - 31
+        - 32
+    - name: MacOSX
+      versions:
+        - all
+    - name: EL
+    - name: Ubuntu
+      versions:
+        - bionic
+        - focal
+        - xenial
   galaxy_tags:
     - development
     - package
