@@ -1,4 +1,9 @@
 ---
 - hosts: all
+  vars:
+    pkg_upgrade_update_only: True
   roles:
-    - role: '{{playbook_dir}}'
+    - role: '{{ playbook_dir }}'
+- hosts: all
+  roles:
+    - role: '{{ playbook_dir }}'
