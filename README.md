@@ -1,6 +1,6 @@
 andrewrothstein.pkg-upgrade
 =========
-[![Build Status](https://travis-ci.org/andrewrothstein/ansible-pkg-upgrade.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-pkg-upgrade)
+![Build Status](https://github.com/andrewrothstein/ansible-pkg-upgrade/actions/workflows/build.yml/badge.svg)
 
 Pulls in all package upgrades available with the package manager. This role is *not* idempotent.
 
