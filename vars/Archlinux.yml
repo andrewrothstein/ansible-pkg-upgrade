@@ -1,2 +1,2 @@
 ---
-pkg_upgrade_upgrade_cmd: pacman -S -y --noconfirm
+pkg_upgrade_upgrade_cmd: pacman -S -q -y --noconfirm

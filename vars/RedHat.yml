@@ -1,11 +1,11 @@
 ---
 pkg_upgrade_update_cmds:
   '7':
-    update: yum update -y
-    upgrade: yum upgrade -y
+    update: yum update -q -y
+    upgrade: yum upgrade -q -y
   '8':
-    update: dnf update -y
-    upgrade: dnf upgrade -y
+    update: dnf update -q -y
+    upgrade: dnf upgrade -q -y
 
 pkg_upgrade_update_cmd: '{{ pkg_upgrade_update_cmds[ansible_distribution_major_version]["update"] }}'
 pkg_upgrade_upgrade_cmd: '{{ pkg_upgrade_update_cmds[ansible_distribution_major_version]["upgrade"] }}'

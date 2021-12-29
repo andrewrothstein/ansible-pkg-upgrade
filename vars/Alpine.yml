@@ -1,3 +1,3 @@
 ---
-pkg_upgrade_update_cmd: apk update
-pkg_upgrade_upgrade_cmd: apk upgrade
+pkg_upgrade_update_cmd: apk update -q
+pkg_upgrade_upgrade_cmd: apk upgrade -q

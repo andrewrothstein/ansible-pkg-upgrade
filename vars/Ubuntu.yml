@@ -2,5 +2,5 @@
 # xenial and everything there after is just apt not apt-get anymore
 pkg_upgrade_pkg_mgr: '{% if ansible_distribution_major_version|int >= 16 %}apt{% else %}apt-get{% endif %}'
 
-pkg_upgrade_update_cmd: '{{ pkg_upgrade_pkg_mgr }} update -y'
-pkg_upgrade_upgrade_cmd: '{{ pkg_upgrade_pkg_mgr }} upgrade -y'
+pkg_upgrade_update_cmd: '{{ pkg_upgrade_pkg_mgr }} update -q -y'
+pkg_upgrade_upgrade_cmd: '{{ pkg_upgrade_pkg_mgr }} upgrade -q -y'
