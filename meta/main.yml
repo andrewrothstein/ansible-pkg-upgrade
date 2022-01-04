@@ -12,26 +12,25 @@ galaxy_info:
         - all
     - name: Archlinux
       versions:
-        - 7
+        - all
+    - name: EL
+      versions:
         - 8
     - name: Debian
       versions:
         - bullseye
         - buster
-        - stretch
     - name: Fedora
       versions:
-        - 31
-        - 32
+        - 35
+        - 36
     - name: MacOSX
       versions:
         - all
-    - name: EL
     - name: Ubuntu
       versions:
         - bionic
         - focal
-        - xenial
   galaxy_tags:
     - development
     - package
