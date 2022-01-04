@@ -1,4 +1,5 @@
 ---
 # defaults file for pkg-upgrade
-pkg_upgrade_privilege_escalation: True
-#pkg_upgrade_update_only: False
+
+pkg_upgrade_privilege_escalation: true
+# pkg_upgrade_update_only: false
